@@ -14,12 +14,4 @@ export async function GET(){
             students, 
             duration: Date.now() - startTime,
         });
-    }catch(error){
-        console.error("Students API Error:",error);
-        return NextResponse.json(
-            {error: "internal server error"},
-            {status: 500}
-        );
-
-    }
-}
+   
